@@ -9,8 +9,7 @@ app = FastAPI()
 async def get_model():
     max = 30
     rand = random.randint(1, max)
-    return {"free": random.randint(1, max),
-            "occupied": max - rand}
+    return {"free": random.randint(1, max)}
 
 
 if __name__ == "__main__":
